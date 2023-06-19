@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.brand {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  text-align: right;
 }
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: 40px auto;
+}
+.user-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.user-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.user-avatar {
+  width: 100%;
+}
+
+.user-name {
+  margin-top: 10px;
+}
+
+.user-email {
+  margin-top: 5px;
+}
+
+
+
